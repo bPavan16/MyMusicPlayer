@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Ubuntu:wght@700&display=swap');
+
+/* .round {
+    font-family: 'Playfair Display', serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.ubuntu {
+    font-family: 'Playfair Display', serif;
+    font-family: 'Ubuntu', sans-serif;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+}
+
+nav ul {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    height: 10vh;
+    width: 100%;
+}
+
+.brand img {
+    margin: 5px;
+    width: 60px;
+    height: 60px;
+}
+
+.brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 10px;
+}
+
+.heading {
+    font-size: 4vh;
+    padding: 5px;
+}
+
+nav{
+    /* position:static ; */
+    /* top: 0px; */
+    background: radial-gradient(circle at 1.8% 4.8%, rgb(3, 12, 69) 0%, rgb(0, 1, 5) 90%);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom: 1px white solid;
+}
+
+/* .navigation{
+    position: sticky;
+    top:0;
+} */
+
+.navigation ul {
+    background-color: rgb(0, 0, 0);
+    border-bottom: 1px white solid;
+    color: white;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+}
+
+.navigation li {
+    transition: width 2s ease-in-out 2s;
+}
+
+.navigation li:hover {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    width: 25%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+    min-height: 75vh;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Ubuntu', sans-serif;
+    margin: auto;
+    background-image: radial-gradient(circle, #302424, #261d1d, #1b1616, #110d0e, #000000);
+    background-image: url('bgBlack.jpg');
+    /* background-image: url('bg1.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: initial;
+    color: white;
+    font-size: 0.75rem;
+}
+
+#MusicTitle {
+    background-color: black;
+    text-align: center;
+    font-size: 4vh;
+    margin: 5px;
+    margin-bottom: 8px;
+}
+
+.bottom {
+    border: white 2px solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 0;
+    position: sticky;
+    bottom: 0px;
+    height: 20vh;
+    background-color: rgb(4, 4, 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.icons {
+    margin-top: 35px;
+}
+
+.icons i {
+    margin: 0 25px;
+    margin-bottom: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    scale: 2;
+    border-radius: 50px;
+    border: solid white 1px;
+}
+
+#myProgressBar {
+    width: 80vw;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.SongItem img {
+    height: 8vh;
+    width: 8vh;
+    margin: 6px;
+    border-radius: 35%;
+}
+
+.SongItem{
+    cursor: pointer;
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(37, 37, 37) 90.2%);
+    border: 2px whitesmoke solid;
+    margin: 10px;
+    display: flex;
+    max-width: 40rem;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    transition: background-color ease-in;
+}
+
+.duration {
+    padding: 5px;
+    margin-right: 5px;
+    font-size: medium;
+}
+
+.songName {
+    line-height: 30px;
+    font-size: 2.5vh;
+    text-align: center;
+}
+
+.songListPlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PressPlay {
+    position: relative;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    height: 5vh;
+    width: 5vh;
+    background: whitesmoke;
+    border: black solid 2px;
+    /* text-align: center; */
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+#masterSongName {
+    margin-bottom: 14px;
+    font-size: 3vh;
+}
+
+.footer {
+    height: 5vh;
+}
